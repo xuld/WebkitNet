@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebkitNet", "WebkitNet\Webk
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JSCore", "JSCore\JSCore.vcxproj", "{287EEE45-1390-44D5-982F-0B96D4A077DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebkitNet.Demo", "WebkitNet.Demo\WebkitNet.Demo.csproj", "{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
