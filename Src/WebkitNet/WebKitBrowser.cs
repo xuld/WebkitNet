@@ -962,7 +962,7 @@ namespace WebKit
                 // WebKit COM component registration free
                 if ((actCtxRefCount++) == 0)
                 {
-                    activationContext = new ActivationContext(GlobalPreferences.WebKitPath + "\\OpenWebKitSharp.manifest"); 
+                    activationContext = new ActivationContext(GlobalPreferences.WebKitPath + "\\WebkitNet.manifest"); 
                     activationContext.Initialize();
                     // TODO: more error handling here
                     if (activationContext.Initialized != true)

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebkitNet", "WebkitNet\Webk
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JSCore", "JSCore\JSCore.vcxproj", "{287EEE45-1390-44D5-982F-0B96D4A077DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,16 @@ Global
 		{287EEE45-1390-44D5-982F-0B96D4A077DA}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{287EEE45-1390-44D5-982F-0B96D4A077DA}.Release|Win32.ActiveCfg = Release|Win32
 		{287EEE45-1390-44D5-982F-0B96D4A077DA}.Release|Win32.Build.0 = Release|Win32
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E00D785C-4F7C-47C5-86A0-4C7EB03622F6}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
