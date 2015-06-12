@@ -473,9 +473,31 @@ namespace WebKit
             return 1;
         }
 
-        public IWebEmbeddedView embeddedViewWithArguments(WebView sender, webFrame frame, CFDictionaryPropertyBag arguments)
-        {
-            throw new NotImplementedException();
+        class DefaultWebEmbeddedView : IWebEmbeddedView {
+
+            public int createViewWindow(int parentWindow, ref tagSIZE pluginSize) {
+                return 0;
+            }
+
+            public void didFail(WebError error) {
+               
+            }
+
+            public void didFinishLoading() {
+               
+            }
+
+            public void didReceiveData(IStream data) {
+               
+            }
+
+            public void didReceiveResponse(IWebURLResponse response) {
+               
+            }
+        }
+
+        public IWebEmbeddedView embeddedViewWithArguments(WebView sender, webFrame frame, CFDictionaryPropertyBag arguments) {
+            return new DefaultWebEmbeddedView();
         }
 
         public void exceededDatabaseQuota(WebView sender, webFrame frame, WebSecurityOrigin origin, string databaseIdentifier)

@@ -59,18 +59,17 @@ namespace WebKit
 
         public void decidePolicyForMIMEType(WebView WebView, string type, IWebURLRequest request, webFrame frame, IWebPolicyDecisionListener listener)
         {
-            if (WebView.canShowMIMEType(type) == 0 && !request.url().StartsWith("file:") && !type.Contains("pdf"))
-            {
-                if (AllowDownloads)
-                    listener.download();
-                else
-                    listener.ignore();
-            }
-            else
-            {
-                listener.use();
-                Owner.tempmimetype = type;
-            }
+            try {
+                if (WebView.canShowMIMEType(type) == 0 && !request.url().StartsWith("file:") && !type.Contains("pdf")) {
+                    if (AllowDownloads)
+                        listener.download();
+                    else
+                        listener.ignore();
+                } else {
+                    listener.use();
+                    Owner.tempmimetype = type;
+                }
+            } catch { }
         }
 
         public void decidePolicyForNavigationAction(WebView WebView, CFDictionaryPropertyBag actionInformation, IWebURLRequest request, webFrame frame, IWebPolicyDecisionListener listener)
